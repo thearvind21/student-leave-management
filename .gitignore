@@ -26,12 +26,6 @@ build
 .env.development.local
 .env.test.local
 .env.production.local
-.env.development
-.env.production
-.env.test
-.env.*.local
-.env.*
-!.env.example
 
 # Cache directories
 .cache
@@ -58,7 +52,6 @@ jspm_packages/
 
 # TypeScript cache
 *.tsbuildinfo
-
 
 # Optional npm cache directory
 .npm
@@ -117,9 +110,8 @@ Desktop.ini
 *.sqlite3
 
 # Supabase
-.supabase/
-supabase/.branches/
-supabase/.temp/
+.branches
+.temp
 
 # Package manager lock files (keep only one)
 # Uncomment the ones you don't use
