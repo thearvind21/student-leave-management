@@ -7,6 +7,7 @@ import { AuthProvider, useAuth } from "./context/AuthContext";
 import { NotificationsProvider } from "./context/NotificationsContext";
 import { ThemeProvider } from "./context/ThemeProvider";
 import { AdminProvider } from "./context/AdminContext";
+import { Analytics } from "@vercel/analytics/react";
 
 import Index from "./pages/Index";
 import Login from "./pages/Login";
@@ -110,6 +111,7 @@ const App = () => (
                   <Route path="/faculty/reports" element={<FacultyRoute><FacultyReports /></FacultyRoute>} />
                   <Route path="*" element={<NotFound />} />
                 </Routes>
+                <Analytics />
               </BrowserRouter>
             </NotificationsProvider>
           </AdminProvider>
